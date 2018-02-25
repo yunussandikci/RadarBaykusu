@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/linearLayout1"
+    p1:background="#2c3e50">
+    <ImageView
+        p1:src="@drawable/logobeyaztransparent"
+        p1:layout_width="match_parent"
+        p1:layout_height="1dp"
+        p1:layout_weight="5"
+        p1:id="@+id/imageView1" />
+    <TextView
+        p1:text="Radar Baykusu'nun verdigi bilgiler GPS, Hava Durumu, Kullanılan Cihaz Özellikleri, vb... gibi birçok nedenle farklılıklar gösterebilir. Radar Baykusu arayüzünde gösterilen bilgiler fikir vermek amacı taşır ve kesin bilgi olarak kabul edilmemelidir. Yazılımın kullanımı sonucunda oluşabilecek trafik cezaları için Pergamon Solutions hiç bir sorumluluk kabul etmez."
+        p1:textAppearance="?android:attr/textAppearanceSmall"
+        p1:layout_width="match_parent"
+        p1:layout_weight="1"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/textView1"
+        p1:gravity="center"
+        p1:textColor="#ffffff"
+        p1:layout_marginLeft="20dp"
+        p1:layout_marginRight="20dp" />
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_weight="4"
+        p1:id="@+id/linearLayout2"
+        p1:minWidth="25px"
+        p1:minHeight="25px">
+        <Button
+            p1:text="Kabul Ediyorum"
+            p1:layout_weight="1"
+            p1:layout_height="match_parent"
+            p1:layout_width="match_parent"
+            p1:textColor="#FFFFFF"
+            p1:background="#27ae60"
+            p1:id="@+id/agree"
+            p1:layout_marginLeft="20dp"
+            p1:layout_marginRight="10dp"
+            p1:layout_marginTop="20dp"
+            p1:layout_marginBottom="20dp" />
+        <Button
+            p1:text="Kabul Etmiyorum"
+            p1:layout_weight="1"
+            p1:layout_height="match_parent"
+            p1:layout_width="match_parent"
+            p1:textColor="#FFFFFF"
+            p1:background="#c0392b"
+            p1:id="@+id/disagree"
+            p1:layout_marginRight="20dp"
+            p1:layout_marginLeft="10dp"
+            p1:layout_marginTop="20dp"
+            p1:layout_marginBottom="20dp" />
+    </LinearLayout>
+    <TextView
+        p1:text="Radar Baykuşu © 2017 Pergamon Solutions"
+        p1:textAppearance="?android:attr/textAppearanceSmall"
+        p1:layout_width="match_parent"
+        p1:layout_weight="1"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/textView1"
+        p1:gravity="center"
+        p1:textColor="#ffffff" />
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout1"
+    android:background="#2c3e50">
+    <ImageView
+        android:src="@drawable/RadarBaykusuLogoMavi"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_weight="8"
+        android:id="@+id/imageView1" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:id="@+id/linearLayout2"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <Button
+            android:text="Binek Araç"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:id="@+id/BinekButton"
+            android:background="#2ecc71"
+            android:tag="Binek"
+            android:textSize="30sp"
+            android:drawableBottom="@drawable/rsz_1rsz_speedlimit2"
+            android:paddingBottom="20dp" />
+        <Button
+            android:text="Ticari Araç"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:id="@+id/TicariButton"
+            android:background="#3498db"
+            android:tag="Ticari"
+            android:textSize="30sp"
+            android:drawableBottom="@drawable/rsz_2rsz_1speedlimit1"
+            android:paddingBottom="20dp" />
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+</LinearLayout>

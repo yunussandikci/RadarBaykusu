@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.pergamon.radarbaykusu" android:versionName="1.5" android:installLocation="preferExternal" android:versionCode="5">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="25" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-feature android:glEsVersion="0x00020000" android:required="true" />
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+	<uses-permission android:name="com.pergamon.radarbaykusu.permission.MAPS_RECIEVE" />
+	<permission android:name="com.pergamon.radarbaykusu.permission.MAPS_RECIEVE" android:protectionLevel="signature" />
+	<application android:label="Radar Baykuşu" android:hardwareAccelerated="false" android:theme="@android:style/Theme.Black.NoTitleBar" android:largeHeap="true" android:icon="@drawable/Icon">
+		<activity android:name=".LocationActivity"></activity>
+		<activity android:name=".SplashActivity"></activity>
+		<activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:theme="@android:style/Theme.Translucent" />
+		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyA_NusEh9X4Z4ujnKeMc_oozWmUY6hWl6A" />
+		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+	</application>
+</manifest>
